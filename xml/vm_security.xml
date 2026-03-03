@@ -17,7 +17,12 @@
         tracked. Since this isolates VMs, the other VMs or the host machine are not affected by
         threats.
       </para>
-
+      <note>
+       <title>AMD SEV-ES deprecation notice</title>
+       <para>
+        AMD SEV-ES is deprecated on CPUs that support AMD SEV-SNP technology. SEV-ES (Encrypted State) is a subset of the features found in SEV-SNP (Secure Nested Paging). If the hardware supports SNP, it usually defaults to the newer standard because it includes all the protections of ES plus memory integrity.
+       </para>
+      </note>
       <para>
         This section explains the steps to enable and use AMD SEV-SNP on your AMD EPYC server with
         &productname; &productnumber;.
@@ -28,6 +33,14 @@
       <dm:translation>yes</dm:translation>
     </dm:docmanager>
   <revhistory xml:id="rh-cha-vm-security">
+   <revision>
+     <date>2026-03-03</date>
+     <revdescription>
+       <para>
+        Included deprecation notice for &amdsev;-ES.
+       </para>
+     </revdescription>
+   </revision>
    <revision>
      <date>2025-06-12</date>
      <revdescription>
@@ -216,7 +229,7 @@
     </para>
 
     <para>
-      The attestation process involves two tools: <command>snpguest</command> and <command>snphost</command>.  
+      The attestation process involves two tools: <command>snpguest</command> and <command>snphost</command>.
     </para>
 
     <sect2 xml:id="sec-vm-security-snp-attestation-guest">
@@ -269,7 +282,7 @@ VEK signed the Attestation Report!
           </screen>
         </step>
       </procedure>
-    
+
       <note>
         <para>
           The extended attestation workflow using the
@@ -314,7 +327,7 @@ ASK ⬑ VCEK
           </screen>
         </step>
       </procedure>
-    </sect2>      
+    </sect2>
   </sect1>
 
   <sect1 xml:id="sec-vm-security-sev-snp-limits">
