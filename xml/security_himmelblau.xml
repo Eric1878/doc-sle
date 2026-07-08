@@ -4,15 +4,15 @@
   %entities;
 ]>
 <chapter xmlns:its="http://www.w3.org/2005/11/its" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="cha-security-himmelblau">
-  <title>Authenticating with Microsoft Entra ID using Himmelblau</title>
+  <title>Authenticating with &ms; Entra ID using Himmelblau</title>
   <info>
-    <meta name="description" its:translate="yes">Configure Himmelblau for Microsoft Entra ID authentication</meta>
+    <meta name="description" its:translate="yes">Configure Himmelblau for &ms; Entra ID authentication</meta>
     <dm:docmanager xmlns:dm="urn:x-suse:ns:docmanager">
       <dm:translation>yes</dm:translation>
     </dm:docmanager>
     <abstract>
       <para>
-        Himmelblau integrates Microsoft Entra ID authentication with Linux authentication services.
+        Himmelblau integrates &ms; Entra ID authentication with Linux authentication services.
         This chapter describes the system configuration needed on &productname;: installing the
         required packages, enabling the PAM module, enabling NSS lookups, configuring the Entra ID
         domain and starting the Himmelblau services.
